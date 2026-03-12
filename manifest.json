@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "TRI·TFM v3.0: LLM Evaluator (Lexeme Injection)",
+  "version": "1.0",
+  "description": "Evaluate LLM responses at zero API cost using Lexeme Injection. Forces ChatGPT to evaluate its own answers mathematically.",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://chatgpt.com/*", "https://claude.ai/*"],
+      "js": ["content.js"]
+    }
+  ]
+}

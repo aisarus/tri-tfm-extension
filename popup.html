@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TRI·TFM v3.0 Evaluator</title>
+    <style>
+        body { width: 300px; padding: 15px; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; background-color: #f9fafb; color: #111827; }
+        h2 { font-size: 16px; margin-top: 0; color: #2563eb; }
+        p { font-size: 12px; color: #4b5563; }
+        button {
+            width: 100%; padding: 10px; margin-top: 10px; border: none; border-radius: 6px;
+            background-color: #2563eb; color: white; font-weight: bold; cursor: pointer; font-size: 13px;
+        }
+        button:hover { background-color: #1d4ed8; }
+        .version { font-size: 10px; text-align: right; color: #9ca3af; margin-top: 15px; }
+    </style>
+</head>
+<body>
+    <h2>TRI·TFM v3.0: Lexeme Injector</h2>
+    <p>Use your ChatGPT Plus / Claude Pro subscription to evaluate the previous response using a zero-variance deterministic rubric.</p>
+    <button id="injectBtn">Inject Evaluation Lexeme (T=0.0)</button>
+    <button id="injectDepthBtn" style="background-color: #059669;">Inject M-Axis Lexeme (Depth)</button>
+    <div class="version">Zero-Cost Inference (B2C Edition)</div>
+    <script src="popup.js"></script>
+</body>
+</html>
