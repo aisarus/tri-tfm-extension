@@ -2,7 +2,7 @@
 
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     // Basic ChatGPT / Claude textarea selector (might need updates based on UI changes)
-    const textarea = document.querySelector('textarea#prompt-textarea, div[contenteditable="true"]');
+    const textarea = document.querySelector('textarea#prompt-textarea, div[contenteditable="true"], div.ProseMirror, textarea');
 
     if (!textarea) {
         alert("TRI·TFM v3.0 Error: Could not find the input box.");
